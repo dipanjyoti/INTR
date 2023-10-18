@@ -45,7 +45,7 @@ pip install -r requirements.txt
 ## Data Preparation
 Follow the below format for data.
 ```
-dataset_path
+datasets
 ├── dataset_name
 │   ├── train
 │   │   ├── class1
