@@ -11,56 +11,34 @@ In the INTR model, each query in the decoder is responsible for the prediction o
 ## Fine-tune model
 
 INTR fine-tuned models on different datasets
-
-<div style="display: flex;">
-  <div style="flex: 1; padding: 5px;">
-    <table>
-      <thead>
-        <tr>
-          <th>Header 1</th>
-          <th>Header 2</th>
-          <th>Header 3</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Row 1, Col 1</td>
-          <td>Row 1, Col 2</td>
-          <td>Row 1, Col 3</td>
-        </tr>
-        <tr>
-          <td>Row 2, Col 1</td>
-          <td>Row 2, Col 2</td>
-          <td>Row 2, Col 3</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-  <div style="flex: 1; padding: 5px;">
-    <table>
-      <thead>
-        <tr>
-          <th>Header 4</th>
-          <th>Header 5</th>
-          <th>Header 6</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Row 1, Col 4</td>
-          <td>Row 1, Col 5</td>
-          <td>Row 1, Col 6</td>
-        </tr>
-        <tr>
-          <td>Row 2, Col 4</td>
-          <td>Row 2, Col 5</td>
-          <td>Row 2, Col 6</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</div>
-
+<table>
+  <tr>
+    <th>Header 1</th>
+    <th>Header 2</th>
+  </tr>
+  <tr>
+    <td>Row 1, Col 1</td>
+    <td>Row 1, Col 2</td>
+  </tr>
+  <tr>
+    <td>Row 2, Col 1</td>
+    <td>Row 2, Col 2</td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <th>Header 3</th>
+    <th>Header 4</th>
+  </tr>
+  <tr>
+    <td>Row 1, Col 3</td>
+    <td>Row 1, Col 4</td>
+  </tr>
+  <tr>
+    <td>Row 2, Col 3</td>
+    <td>Row 2, Col 4</td>
+  </tr>
+</table>
 
 
 
