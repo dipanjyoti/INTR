@@ -11,12 +11,12 @@ In the INTR model, each query in the decoder is responsible for the prediction o
 ## Fine-tune model
 
 INTR fine-tuned models on different datasets
-| Dataset | Model |
-|----------|----------|
-| Cub | [checkpoint](https://github.com) |
-| Bird| [checkpoint](https://github.com) |
 
 
+| Dataset | acc@1 | acc@5 | Model |
+|----------|----------|----------|----------|
+| Cub | 71.75 |XXXX |  [checkpoint](https://github.com)|
+| Bird525 | XXXX| XXXX|  [checkpoint](https://github.com) |
 
 
 
