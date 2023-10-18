@@ -8,9 +8,9 @@ In the INTR model, each query in the decoder is responsible for the prediction o
 
 ![Image Description](git_images/teaser.png)
 
-## Fine-tune model
+## Fine-tune model and results
 
-INTR fine-tuned models on different datasets
+INTR classification performance and fine-tuned models on different datasets
 
 
 | Dataset | acc@1 | acc@5 | Model |
