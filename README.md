@@ -10,7 +10,7 @@ INTR is a novel usage of Transformers to make image classification interpretable
 
 Create python environment (optional)
 ```sh
-conda create -n intr python=3.7 -y
+conda create -n intr python=3.8 -y
 conda activate intr
 ```
 
