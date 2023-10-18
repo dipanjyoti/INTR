@@ -78,7 +78,7 @@ To evaluate a pre-trained INTR model quanlitatively for a default batch size of 
 ```sh
 python -m tools.visualization --eval --resume <checkpoint> --dataset_name <dataset name> --class_index <class_number>
 ```
-## Training (Image Recognition)
+## Training (Interpretable Transformer)
 To train INTR model on a 4-GPU server on a pre-trained DETR model
 
 ```sh
