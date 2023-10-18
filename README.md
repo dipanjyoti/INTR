@@ -8,6 +8,19 @@ In the INTR model, each query in the decoder is responsible for the prediction o
 
 ![Image Description](git_images/teaser.png)
 
+## Fine-tune model
+
+INTR fine-tuned models on different datasets
+```sh
+| Dataset | Header 2 | Header 3 | Header 4 |
+|----------|----------|----------|----------|
+| Cub | Row 1, Col 2 | Row 1, Col 3 | Row 1, Col 4 |
+| Bird | Row 2, Col 2 | Row 2, Col 3 | Row 2, Col 4 |
+| Pet | Row 3, Col 2 | Row 3, Col 3 | Row 3, Col 4 |
+```
+
+
+
 ## Installation Instructions
 
 Create python environment (optional)
