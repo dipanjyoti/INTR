@@ -15,8 +15,8 @@ INTR on [DETR-R50](https://github.com) backbone, classification performance, and
 
 | Dataset | acc@1 | acc@5 | Model |
 |----------|----------|----------|----------|
-| Cub | 71.75 |XXXX |  [checkpoint](https://github.com)|
-| Bird525 | XXXX| XXXX|  [checkpoint](https://github.com) |
+| CUB | 71.7 | 89.3 |  [checkpoint](https://github.com)|
+| Bird | XXX | XXX |  [checkpoint](https://github.com) |
 
 
 

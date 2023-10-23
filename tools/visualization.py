@@ -1,4 +1,11 @@
-# Copyright (c) 
+# ------------------------------------------------------------------------
+# INTR
+# Copyright (c) 2023 PAUL. All Rights Reserved.
+# Licensed under the Apache License, Version 2.0 [see LICENSE for details]
+# ------------------------------------------------------------------------
+# Copied from DETR (https://github.com/facebookresearch/detr)
+# Copyright (c) Facebook, Inc. and its affiliates. All Rights Reserved.
+# ------------------------------------------------------------------------
 
 import os
 import cv2 
@@ -74,7 +81,7 @@ def get_args_parser():
 
     # * Dataset parameters
     parser.add_argument('--dataset_name', default='cub') 
-    parser.add_argument('--dataset_path', default='/home/paul.1164/Paul/DETR/DATASETS', type=str) 
+    parser.add_argument('--dataset_path', default='/path/to/datasets', type=str) 
     parser.add_argument('--output_dir', default='output',
                         help='path where to save, empty for no saving')
 

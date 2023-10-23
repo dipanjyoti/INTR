@@ -1,4 +1,11 @@
-# Copyright (c). All Rights Reserved
+# ------------------------------------------------------------------------
+# INTR
+# Copyright (c) 2023 PAUL. All Rights Reserved.
+# Licensed under the Apache License, Version 2.0 [see LICENSE for details]
+# ------------------------------------------------------------------------
+# Copied from DETR (https://github.com/facebookresearch/detr)
+# Copyright (c) Facebook, Inc. and its affiliates. All Rights Reserved.
+# ------------------------------------------------------------------------
 
 """
 dataset which returns image and target for evaluation.
@@ -32,12 +39,7 @@ class CreateImageFolder(ImageFolder):
 # The transform follows DETR transform 
 def make_transforms(image_set, args):
 
-    if args.dataset_name in data_mean_std:
-        mean, std = data_mean_std[args.dataset_name]
-    else:
-        raise RuntimeError(
-            f"Can't find mean/std for {args.dataset_name}. Please add it to dataset/constants.py"
-        )
+    mean, std = data_mean_std["default"]
 
     normalize = T.Compose([
         T.ToTensor(),

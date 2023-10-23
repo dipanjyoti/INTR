@@ -1,3 +1,12 @@
+# ------------------------------------------------------------------------
+# INTR
+# Copyright (c) 2023 PAUL. All Rights Reserved.
+# Licensed under the Apache License, Version 2.0 [see LICENSE for details]
+# ------------------------------------------------------------------------
+# Copied from DETR (https://github.com/facebookresearch/detr)
+# Copyright (c) Facebook, Inc. and its affiliates. All Rights Reserved.
+# ------------------------------------------------------------------------
+
 """
 INTR model and loss.
 """
@@ -27,7 +36,7 @@ class INTR(nn.Module):
         hidden_dim = transformer.d_model
 
         # INTR classification head presence vector
-        self.query_transform = nn.Linear(hidden_dim, 1)
+        self.presence_vector = nn.Linear(hidden_dim, 1)
 
         self.query_embed = nn.Embedding(num_queries, hidden_dim)
         self.input_proj = nn.Conv2d(backbone.num_channels, hidden_dim, kernel_size=1)
@@ -60,7 +69,7 @@ class INTR(nn.Module):
         assert mask is not None
         hs, encoder_output, attention_scores, avg_attention_scores = self.transformer(self.input_proj(src), mask, self.query_embed.weight, pos[-1])
 
-        query_logits = self.query_transform(hs[-1])
+        query_logits = self.presence_vector(hs[-1])
         out = {'query_logits': query_logits.squeeze(dim=-1)}
 
         return out, encoder_output, hs, attention_scores, avg_attention_scores

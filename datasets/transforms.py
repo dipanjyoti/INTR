@@ -1,4 +1,12 @@
-# Copyright (c) 
+# ------------------------------------------------------------------------
+# INTR
+# Copyright (c) 2023 PAUL. All Rights Reserved.
+# Licensed under the Apache License, Version 2.0 [see LICENSE for details]
+# ------------------------------------------------------------------------
+# Copied from DETR (https://github.com/facebookresearch/detr)
+# Copyright (c) Facebook, Inc. and its affiliates. All Rights Reserved.
+# ------------------------------------------------------------------------
+
 """
 INTR uses only transformation of image
 The script is copied from original DETR github code

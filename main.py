@@ -1,4 +1,11 @@
-# Copyright (c) 
+# ------------------------------------------------------------------------
+# INTR
+# Copyright (c) 2023 PAUL. All Rights Reserved.
+# Licensed under the Apache License, Version 2.0 [see LICENSE for details]
+# ------------------------------------------------------------------------
+# Copied from DETR (https://github.com/facebookresearch/detr)
+# Copyright (c) Facebook, Inc. and its affiliates. All Rights Reserved.
+# ------------------------------------------------------------------------
 
 import os
 import json
@@ -60,8 +67,8 @@ def get_args_parser():
 
 
     # * Dataset parameters
-    parser.add_argument('--dataset_name', default='cub') 
-    parser.add_argument('--dataset_path', default='/local/scratch/paul.1164/INTR/DATASETS', type=str) 
+    parser.add_argument('--dataset_name', default='cub', type=str) 
+    parser.add_argument('--dataset_path', default='/path/to/datasets', type=str) 
     parser.add_argument('--output_dir', default='output',
                         help='path where to save, empty for no saving')
     parser.add_argument('--output_sub_dir', default='output_sub')
@@ -72,7 +79,7 @@ def get_args_parser():
     # parser.add_argument('--rm_freeze', default=140, type=int, help='epoch at which the freezing at the encoder is removed')
     parser.add_argument('--test', default="val", type=str, choices=["val", "test"])
     parser.add_argument('--resume', default='', help='resume from checkpoint')
-    parser.add_argument('--finetune', default='/home/paul.1164/Paul/DETR/detr/pretrained/detr-r50-e632da11.pth', 
+    parser.add_argument('--finetune', default='', 
                         help='finetune from pretrained checkpoint (COCO dataset trained for object detection task)')
 
     # * Device parameters

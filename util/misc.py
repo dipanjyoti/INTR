@@ -1,4 +1,11 @@
-# Copyright (c) Facebook, Inc. and its affiliates. All Rights Reserved
+# ------------------------------------------------------------------------
+# INTR
+# Copyright (c) 2023 PAUL. All Rights Reserved.
+# Licensed under the Apache License, Version 2.0 [see LICENSE for details]
+# ------------------------------------------------------------------------
+# Copied from DETR (https://github.com/facebookresearch/detr)
+# Copyright (c) Facebook, Inc. and its affiliates. All Rights Reserved.
+# ------------------------------------------------------------------------
 """
 Misc functions, including distributed helpers.
 
@@ -482,9 +489,9 @@ def load_model(args, state_dict):
         del state_dict[key]
 
     #   New classifier head for image level prediction for INTR
-    state_dict['query_transform.weight'] = nn.init.xavier_uniform_(torch.empty(1, args.hidden_dim))
-    state_dict['query_transform.bias'] = torch.zeros(1)
-    state_dict['query_transform.bias'] = state_dict['query_transform.bias'].resize_(1)
+    state_dict['presence_vector.weight'] = nn.init.xavier_uniform_(torch.empty(1, args.hidden_dim))
+    state_dict['presence_vector.bias'] = torch.zeros(1)
+    state_dict['presence_vector.bias'] = state_dict['presence_vector.bias'].resize_(1)
 
     return state_dict
     
