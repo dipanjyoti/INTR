@@ -16,7 +16,6 @@ INTR on [DETR-R50](https://github.com) backbone, classification performance, and
 | Dataset | acc@1 | acc@5 | Model |
 |----------|----------|----------|----------|
 | CUB | 71.7 | 89.3 |  [checkpoint](https://github.com)|
-| Bird | XXX | XXX |  [checkpoint](https://github.com) |
 
 
 
@@ -67,12 +66,14 @@ datasets
 │       └── ...
 ```
 
-## Evaluation
-To evaluate the performance of INTR on the _CUB_ dataset, pre-trained on the _DETR-R50_ backbone on a multi-GPU (e.g., 4 GPUs), please execute the below command.
+## INTR Evaluation
+To evaluate the performance of INTR on the _CUB_ dataset, on a multi-GPU (e.g., 4 GPUs) settings, execute the below command.
 
 ```sh
 CUDA_VISIBLE_DEVICES=0,1,2,3 python -m torch.distributed.launch --nproc_per_node=4 --master_port 12345 --use_env main.py --eval --resume <path/to/finetuned_checkpoint.pth> --dataset_path <path/to/datasets> --dataset_name <dataset_name>
 ```
+## INTR Interpretation
+
 To generate visual representations of the INTR's interpretations, execute the provided command below. This command will present the interpretation for a specific class with the index <class_number>. By default, it will display interpretations from all attention heads. To focus on interpretations associated with the top queries labeled as top_q as well, set the parameter sim_query_heads to 1. Use a batch size of 1 for this visualization.
 
 ```sh
