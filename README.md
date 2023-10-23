@@ -68,15 +68,15 @@ datasets
 ```
 
 ## Evaluation
-To evaluate a pre-trained INTR model quantitatively on a multi GPU (e.g., 4 GPUs)
+To evaluate the performance of INTR on the _CUB_ dataset, pre-trained on the _DETR-R50_ backbone on a multi-GPU (e.g., 4 GPUs), please execute the below command.
 
 ```sh
-CUDA_VISIBLE_DEVICES=0,1,2,3 python -m torch.distributed.launch --nproc_per_node=4 --master_port 12345 --use_env main.py --resume <checkpoint> --dataset_path <path_to_datasets> --dataset_name <dataset_name>
+CUDA_VISIBLE_DEVICES=0,1,2,3 python -m torch.distributed.launch --nproc_per_node=4 --master_port 12345 --use_env main.py --resume <path/to/finetuned_checkpoint.pth> --dataset_path <path/to/datasets> --dataset_name <dataset_name>
 ```
-To evaluate a pre-trained INTR model quanlitatively for a default batch size of 1.
+To visualize the interpretation of INTR, use the following command. It will provide visualization for the class_index <class_number>. By default, all the attention head's interpretations will be displayed. To view the interpretation for `top_q' similar queries use sim_query_heads <1>. Use batch size as 1.
 
 ```sh
-python -m tools.visualization --eval --resume <checkpoint> --dataset_name <dataset name> --class_index <class_number>
+python -m tools.visualization --eval --resume <path/to/finetuned_checkpoint.pth> --dataset_name <dataset_name> --class_index <class_number>
 ```
 ## Training (Interpretable Transformer)
 To train INTR model on a 4-GPU server on a pre-trained DETR model
