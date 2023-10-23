@@ -15,7 +15,7 @@ INTR on [DETR-R50](https://github.com) backbone, classification performance, and
 
 | Dataset | acc@1 | acc@5 | Model |
 |----------|----------|----------|----------|
-| CUB | 71.7 | 89.3 |  [checkpoint](https://github.com)|
+| CUB | 71.7 | 89.3 |  [checkpoint](https://drive.google.com/file/d/12eKuoPR5uTaOREBs9A00vvT9-sLs-XFJ/view?usp=share_link)|
 
 
 
