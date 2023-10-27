@@ -85,3 +85,13 @@ To prepare the INTR for training on a specific dataset, first modify --num_queri
 ```sh
 CUDA_VISIBLE_DEVICES=0,1,2,3 python -m torch.distributed.launch --nproc_per_node=4 --master_port 12345 --use_env main.py --finetune <path/to/detr_r50_checkpoint.pth> --dataset_path <path/to/datasets> --dataset_name <dataset_name> --num_queries <num_of_classes>
 ```
+## Acknowledgment
+Our model is inspired by the [DEtection TRansformer (DETR)](https://github.com/facebookresearch/detr) method.
+
+We thank the authors of DETR for doing such great work.
+
+## Bibtext
+If you find our work helpful for your research, please consider citing the BibTeX entry.
+```sh
+... to be added ...
+```
