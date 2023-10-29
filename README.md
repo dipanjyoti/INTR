@@ -15,7 +15,7 @@ INTR on [DETR-R50](https://github.com/facebookresearch/detr) backbone, classific
 
 | Dataset | acc@1 | acc@5 | Model |
 |----------|----------|----------|----------|
-| CUB | 71.7 | 89.3 |  [checkpoint](https://drive.google.com/file/d/12eKuoPR5uTaOREBs9A00vvT9-sLs-XFJ/view?usp=share_link)|
+| CUB | 71.7 | 89.3 |  [checkpoint](https://huggingface.co/imageomics/intr-detr-r50-cub/resolve/main/checkpoint.pth)|
 
 
 
